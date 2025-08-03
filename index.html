@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio de Jorge Villamil Sánchez</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="Styles.css" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style> html { scroll-behavior: smooth; } </style>
+</head>
+<body>
+  <div id="loader">
+    <img src="LogoJV.png" alt="Cargando..." style="width:120px;">
+  </div>
+  <header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="LogoJV.png" alt="Logo personal de jorge">
+    </div>
+    <div class="header-content">
+      <h1>Jorge Villamil Sánchez</h1>
+      <p>Contador Senior | General Analista Senior</p>
+      <nav>
+        <a href="#perfil">Perfil</a>
+        <a href="#educacion">Educación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<hr>
+  <section class="conten-flex">
+  <section id="perfil" data-aos="fade-up">
+    <h2>Perfil Personal</h2>
+    <img src="Foto_3x4.jpg" alt="Foto de Jorge" />
+    <br>
+    <p>Soy un profesional optimista y con actitud positiva frente a cualquier desafío. Me gustan los retos porque me impulsan a crecer, a aprender de cada experiencia y a dar siempre lo mejor de mí hasta alcanzar los objetivos. A lo largo de mi trayectoria he desarrollado y fortalecido habilidades clave tanto en lo personal como en lo profesional, construyendo un perfil íntegro, adaptable y enfocado en resultados.</p> 
+    <table>
+      <tr><th>Edad</th><td>36 años</td></tr>
+      <tr><th>Correo</th><td>jorgiel18@hotmail.com</td></tr>
+      <tr><th>Ubicación</th><td>Bogotá DC, Colombia</td></tr>
+    </table>
+  </section> 
+  <section id="experiencia" data-aos="fade-right">
+    <h2>Experiencia</h2>
+    <div class="card">
+      <h3>Hidrosant SAS</h3>
+      <p>Contador Junior (Octubre 2024 - Actualidad)</p>
+      <h3>Flamingo Oil SA</h3>
+      <p>Analista Contable Senior (Octubre 2023 - enero 2024)</p>
+      <h3>Hotel EM BUDGET</h3>
+      <p>Asistente Contable (Abril - Agosto 2023)</p>
+      <h3>Dico Telecomunicaciones S.A.</h3>
+      <p>Asistente Contable (Enero 2019 - Marzo 2023)</p>
+      <h3>Visión Software</h3>
+      <p>Practicante SENA Contabilidad y Finanzas (Octubre 2018 - Enero 2019)</p>
+    </div>
+  </section>
+  <section id="educacion" data-aos="fade-left">
+      <h2>Educación</h2>
+      <div class="card">
+        <h3>Corporación Unificada Nacional de Educación Superior (CUN)</h3>
+        <p>Contador Público</p>
+        <h3>SENA</h3>
+        <p>Tecnólogo en Contabilidad y Finanzas</p>
+      </div>
+  </section>
+  <section id="complementaria" data-aos="fade-right">
+  <h2>Formación complementaria</h2>
+    <div class="card">
+      <strong>Sistema Financiero Colombiano</strong> <br> Incap – 06 horas <br>
+      <strong>Seminario SARLAFT</strong> <br> Incap – 06 horas<br>
+      <strong>Primeros Auxilios </strong> <br> AXXA – 36 horas<br>
+      <strong>Banca y servicios financieros</strong> <br> Incap – 01 semestre <br>
+    </div>
+</section>
+  <section id="habilidades" data-aos="fade-left">
+  <h2>Tecnologías que manejo</h2>
+  <div class="skills">
+    <div><label>Siigo Pyme</label><progress value="90" max="100"></progress></div>
+    <div><label>Paquete Oficce</label><progress value="80" max="100"></progress></div>
+    <div><label>Siigo Nube</label><progress value="80" max="100"></progress></div>
+    <div><label>Sinco ERP</label><progress value="60" max="100"></progress></div>
+    <div><label>Helisa</label><progress value="40" max="100"></progress></div>
+  </div>
+</section>
+<section id="contacto" data-aos="zoom-in">
+  <h2>Contáctame</h2>
+  <form id="contactForm" action="https://formsubmit.co/jorgiel18@hotmail.com" method="POST">
+    <input type="text" name="name" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu correo" required>
+    <textarea name="message" placeholder="Tu mensaje" required></textarea>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde mi portafolio">
+    <input type="hidden" name="_autoresponse" value="Gracias por contactarme. Te responderé pronto.">
+    <input type="hidden" name="_template" value="table">
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+</section>
+<hr>
+<footer>
+  <div class="redes-sociales">
+  <a href="http://www.linkedin.com/in/jorge-villamil-806629b9" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+    <p>&copy; 2025 Jorge Villamil </p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true, 
+    offset: 120,
+  });
+</script>
+<script src="script.js"></script>
+<a href="CV_Jorge_Villamil.pdf" download class="boton-flotante-cv" title="Descargar hoja de vida">
+<i class="fas fa-file-download"></i> </a>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
